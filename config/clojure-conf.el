@@ -1,5 +1,3 @@
-(live-add-pack-lib "clojure-mode")
-
 (eval-after-load 'clojure-mode
   '(font-lock-add-keywords
     'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
@@ -32,7 +30,6 @@
 
 ;;command to align let statements
 ;;To use: M-x align-cljlet
-(live-add-pack-lib "align-cljlet")
 (require 'align-cljlet)
 
 ;;Treat hyphens as a word character when transposing words

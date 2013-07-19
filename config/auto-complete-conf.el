@@ -1,18 +1,12 @@
-(live-add-pack-lib "fuzzy-el")
-(live-add-pack-lib "popup-el")
-
 (require 'popup)
 (require 'fuzzy)
 
 ;;auto-complete mode
 
-
-(live-add-pack-lib "auto-complete")
 (require 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
 (ac-flyspell-workaround)
-(add-to-list 'ac-dictionary-directories (concat (live-pack-lib-dir) "auto-complete/dict"))
 (setq ac-comphist-file (concat live-tmp-dir "ac-comphist.dat"))
 
 (global-auto-complete-mode t)

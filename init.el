@@ -1,8 +1,6 @@
 ;; Clojure Pack
 
 (require 'rainbow-delimiters)
-
-(live-add-pack-lib "uuid")
 (require 'uuid)
 
 (live-load-config-file "paredit-conf.el")

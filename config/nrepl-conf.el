@@ -1,4 +1,3 @@
-(live-add-pack-lib "nrepl")
 (require 'nrepl )
 
 (defun live-windows-hide-eol ()
@@ -6,7 +5,6 @@
  (interactive)
  (setq buffer-display-table (make-display-table))
  (aset buffer-display-table ?\^M []))
-
 
 (when (eq system-type 'windows-nt)
   (add-hook 'nrepl-mode-hook 'live-windows-hide-eol ))
@@ -30,7 +28,6 @@
 (add-to-list 'same-window-buffer-names "*nrepl*")
 
 ;;Auto Complete
-(live-add-pack-lib "ac-nrepl")
 (require 'ac-nrepl )
 (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
 (add-hook 'nrepl-interaction-mode-hook 'ac-nrepl-setup)
